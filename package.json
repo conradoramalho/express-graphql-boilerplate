@@ -1,0 +1,23 @@
+{
+  "name": "express-graphql-boilerplate",
+  "version": "1.0.0",
+  "description": "Node boilerplate with express, graphql, babel, mongoose",
+  "main": "./dist/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url":
+      "git+https://github.com/conradoramalho/express-graphql-boilerplate.git"
+  },
+  "keywords": ["graphql", "node", "express"],
+  "author": "Conrado Ramlho",
+  "license": "MIT",
+  "bugs": {
+    "url":
+      "https://github.com/conradoramalho/express-graphql-boilerplate/issues"
+  },
+  "homepage":
+    "https://github.com/conradoramalho/express-graphql-boilerplate#readme"
+}
