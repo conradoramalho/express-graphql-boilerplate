@@ -9,21 +9,30 @@
   },
   "repository": {
     "type": "git",
-    "url":
-      "git+https://github.com/conradoramalho/express-graphql-boilerplate.git"
+    "url": "git+https://github.com/conradoramalho/express-graphql-boilerplate.git"
   },
-  "keywords": ["graphql", "node", "express"],
+  "keywords": [
+    "graphql",
+    "node",
+    "express"
+  ],
   "author": "Conrado Ramlho",
   "license": "MIT",
   "bugs": {
-    "url":
-      "https://github.com/conradoramalho/express-graphql-boilerplate/issues"
+    "url": "https://github.com/conradoramalho/express-graphql-boilerplate/issues"
   },
-  "homepage":
-    "https://github.com/conradoramalho/express-graphql-boilerplate#readme",
+  "homepage": "https://github.com/conradoramalho/express-graphql-boilerplate#readme",
   "dependencies": {
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
     "mongoose": "^5.0.17"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0-beta.46",
+    "@babel/core": "^7.0.0-beta.46",
+    "@babel/node": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.46",
+    "@babel/plugin-proposal-pipeline-operator": "^7.0.0-beta.46",
+    "@babel/preset-env": "^7.0.0-beta.46"
   }
 }
