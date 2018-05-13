@@ -4,8 +4,9 @@
   "description": "Node boilerplate with express, graphql, babel, mongoose",
   "main": "./dist/server.js",
   "scripts": {
-    "start": "node src/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./src/server.js --exec babel-node",
+    "precommit": "pretty-quick --staged",
+    "build": "babel ./src -d ./dist --source-maps"
   },
   "repository": {
     "type": "git",
@@ -33,6 +34,7 @@
     "@babel/node": "^7.0.0-beta.46",
     "@babel/plugin-proposal-optional-chaining": "^7.0.0-beta.46",
     "@babel/plugin-proposal-pipeline-operator": "^7.0.0-beta.46",
-    "@babel/preset-env": "^7.0.0-beta.46"
+    "@babel/preset-env": "^7.0.0-beta.46",
+    "nodemon": "^1.17.4"
   }
 }
