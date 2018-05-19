@@ -1,10 +1,7 @@
-import express from "express";
-const app = express();
+import startMongo from './configs/mongo';
+import startExpress from './configs/express';
 
-app.get("/", function(req, res) {
-  res.send("Hello World");
-});
-
-app.listen(3001);
-
-console.log("Server listen 3001");
+(() => {
+  startExpress();
+  startMongo();
+})();
