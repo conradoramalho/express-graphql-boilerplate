@@ -8,7 +8,7 @@ import {
 } from 'graphql';
 
 import { GraphQLDate } from 'graphql-iso-date';
-import { userEnumType, sexEnumType } from '../enums';
+import { sexEnumType } from '../enums';
 
 const userType = new GraphQLObjectType({
   name: 'User',
@@ -35,9 +35,6 @@ const userType = new GraphQLObjectType({
     birthdate: {
       type: GraphQLDate,
     },
-    type: {
-      type: userEnumType,
-    },
   },
 });
 
@@ -62,9 +59,6 @@ const userInputType = new GraphQLInputObjectType({
     },
     birthdate: {
       type: new GraphQLNonNull(GraphQLDate),
-    },
-    type: {
-      type: new GraphQLNonNull(userEnumType),
     },
     email: {
       type: new GraphQLNonNull(GraphQLString),
