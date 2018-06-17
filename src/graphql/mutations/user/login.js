@@ -30,11 +30,4 @@ const login = {
   },
 };
 
-const generateToken = async ({ id, name, lastName, type, email }) => {
-  const user = { id, name, lastName, type, email };
-  const token = await jwt.sign({ user }, secretKey, { expiresIn: '1h' });
-
-  return token;
-};
-
 export default login;

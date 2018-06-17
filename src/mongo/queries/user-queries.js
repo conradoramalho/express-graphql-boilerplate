@@ -1,5 +1,7 @@
+import UserModel from '../models/user';
+
 class User {
-  async add(user) {
+  async static add(user) {
     const userData = { ...user, password: encryptPassword(user.password) };
 
     const userModel = new UserModel(userData);
@@ -11,7 +13,7 @@ class User {
     return newUser;
   }
 
-  async remove(params) {
+  async static remove(params) {
     const removedUser = await UserModel.findByIdAndRemove(params.id).exec();
 
     if (!removedUser) throw new Error('Error remove user');
@@ -19,7 +21,7 @@ class User {
     return removedUser;
   }
 
-  async update(params) {
+  async static update(params) {
     const updatedUser = await UserModel.findByIdAndUpdate(params.id, {
       $set: { ...params.data },
     }).exec();
