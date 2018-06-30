@@ -6,7 +6,6 @@ import {
   GraphQLID,
   GraphQLInt,
 } from 'graphql';
-
 import { GraphQLDate } from 'graphql-iso-date';
 import { sexEnumType } from '../enums';
 

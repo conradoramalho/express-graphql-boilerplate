@@ -5,9 +5,11 @@ import UserModel from '../../../models/user';
 const multiple = {
   type: new GraphQLList(userType),
   async resolve() {
-    return await UserModel.find({}, {}, err => {
+    const users = await UserModel.find({}, {}, err => {
       if (err) throw err;
     });
+
+    return users;
   },
 };
 

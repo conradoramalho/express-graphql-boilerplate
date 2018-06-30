@@ -11,7 +11,9 @@ const single = {
     },
   },
   async resolve(root, params) {
-    return await UserModel.findById(params.id).exec();
+    const user = await UserModel.findById(params.id).exec();
+
+    return user;
   },
 };
 
