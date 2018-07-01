@@ -1,5 +1,5 @@
-import startMongo from "./configs/mongo";
-import startExpress from "./configs/express";
+import startMongo from './config/mongo';
+import startExpress from './config/express';
 
 (() => {
   startExpress();

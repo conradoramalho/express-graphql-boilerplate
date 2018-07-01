@@ -1,9 +1,9 @@
+import bcrypt from 'bcryptjs';
+import jwt from 'jsonwebtoken';
 import { GraphQLString, GraphQLNonNull } from 'graphql';
 import { userLoginType } from '../../types/user';
 import UserModel from '../../../models/user';
-import bcrypt from 'bcryptjs';
-import jwt from 'jsonwebtoken';
-import { secretKey } from '../../../configs/constants';
+import { secretKey } from '../../../config/constants';
 
 const login = {
   type: GraphQLString,
