@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/bin/node /usr/bin/yarn syart
+  /usr/bin/node /usr/bin/yarn dev
 
 PATH: 
   /home/conrado/bin:/home/conrado/.local/bin:/home/conrado/bin:/home/conrado/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/home/conrado/Android/sdk/tools:/home/conrado/Android/sdk/platform-tools:/home/conrado/Android/java/jdk1.8.0_172:/home/conrado/Android/sdk/tools:/home/conrado/Android/sdk/platform-tools:/home/conrado/Android/java/jdk1.8.0_172
@@ -43,6 +43,7 @@ npm manifest:
       "bcryptjs": "^2.4.3",
       "express": "^4.16.3",
       "express-graphql": "^0.6.12",
+      "graphql": "^0.13.2",
       "graphql-iso-date": "^3.5.0",
       "mongoose": "^5.0.17"
     },
@@ -1817,6 +1818,12 @@ Lockfile:
     version "3.5.0"
     resolved "https://registry.yarnpkg.com/graphql-iso-date/-/graphql-iso-date-3.5.0.tgz#55a1be0efa8d28c1453afd2eb5ce1d052189a513"
   
+  graphql@^0.13.2:
+    version "0.13.2"
+    resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.13.2.tgz#4c740ae3c222823e7004096f832e7b93b2108270"
+    dependencies:
+      iterall "^1.2.1"
+  
   has-ansi@^2.0.0:
     version "2.0.0"
     resolved "https://registry.yarnpkg.com/has-ansi/-/has-ansi-2.0.0.tgz#34f5049ce1ecdf2b0649af3ef24e45ed35416d91"
@@ -2192,6 +2199,10 @@ Lockfile:
   isobject@^3.0.0, isobject@^3.0.1:
     version "3.0.1"
     resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
+  
+  iterall@^1.2.1:
+    version "1.2.2"
+    resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.2.2.tgz#92d70deb8028e0c39ff3164fdbf4d8b088130cd7"
   
   js-tokens@^3.0.0, js-tokens@^3.0.2:
     version "3.0.2"
@@ -3576,7 +3587,7 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.0.2.tgz#8452b4bb7e83c7c188d8041c1a837c773d6d8bb9"
 
 Trace: 
-  Error: Command "syart" not found. Did you mean "start"?
+  Error: Command "dev" not found.
       at new MessageError (/usr/lib/node_modules/yarn/lib/cli.js:186:110)
       at /usr/lib/node_modules/yarn/lib/cli.js:87307:17
       at Generator.next (<anonymous>)

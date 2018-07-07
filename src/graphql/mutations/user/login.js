@@ -2,7 +2,7 @@ import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { GraphQLString, GraphQLNonNull } from 'graphql';
 import { userLoginType } from '../../types/user';
-import UserModel from '../../../models/user';
+import UserModel from '../../../mongo/models/user';
 import { secretKey } from '../../../config/constants';
 
 const login = {
