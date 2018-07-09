@@ -1,6 +1,6 @@
 import { GraphQLID, GraphQLNonNull } from 'graphql';
 import { userType } from '../../types/user';
-import UserModel from '../../../models/user';
+import UserModel from '../../../mongo/models/user';
 
 const single = {
   type: userType,
