@@ -3,7 +3,7 @@ import jwt from 'jsonwebtoken';
 import { GraphQLString, GraphQLNonNull } from 'graphql';
 import { userLoginType } from '../../types/user';
 import UserModel from '../../../mongo/models/user';
-import { secretKey } from '../../../config/constants';
+import { secretKey } from '../../../environment';
 
 const login = {
   type: GraphQLString,

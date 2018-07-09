@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import { secretKey } from './constants';
+import { secretKey } from '../environment';
 
 const userResolver = async (req, res, next) => {
   const token = req.headers.authentication;
