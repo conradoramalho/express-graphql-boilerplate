@@ -1,6 +1,7 @@
 import express from 'express';
 import graphqlHTTP from 'express-graphql';
 import schema from '../graphql';
+import env from '../environment';
 
 const startExpress = () => {
   const app = express();
@@ -14,8 +15,8 @@ const startExpress = () => {
     }))
   );
 
-  app.listen(3010, () =>
-    console.log('Server -> http://localhost:3010/graphql')
+  app.listen(env.PORT, () =>
+    console.log(`Server -> http://localhost:${env.PORT}/graphql`)
   );
 };
 
