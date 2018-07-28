@@ -1,11 +1,6 @@
-import development from './development';
-import production from './production';
+export default {
+	PORT: process.env.PORT || 3000,
+  	SECRET_KEY: 'D4EEA39D34708926623F84C70EAC26B',
+	IS_PRODUCTION: process.env.NODE_ENV === 'production'
 
-const environment = process.env.NODE_ENV || 'development';
-
-const config = {
-  development,
-  production,
 };
-
-export default config[environment];
