@@ -4,7 +4,8 @@
   "description": "Node boilerplate with express, graphql, babel, mongoose",
   "main": "./dist/server.js",
   "scripts": {
-    "start": "nodemon ./src/server.js --exec babel-node",
+    "start": "node ./dist/server.js",
+    "dev": "nodemon ./src/server.js --exec babel-node",    
     "precommit": "pretty-quick --staged",
     "build": "babel ./src -d ./dist --source-maps"
   },

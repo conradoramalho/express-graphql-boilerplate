@@ -7,14 +7,12 @@ RUN echo 'America/Sao_Paulo' > /etc/timezone && \
 
 WORKDIR /usr/src/app
 
-COPY package*.json  yarn.lock ./
+COPY package*.json  package.lock ./
 
-RUN npm i -g yarn
-
-RUN yarn install
+RUN npm install
 
 COPY . .
 
 RUN yarn build
 
-CMD [ "yarn", "production" ]
+CMD [ "npm", "start" ]

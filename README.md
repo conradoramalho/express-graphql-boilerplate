@@ -14,17 +14,17 @@ This is a simple graphql boilerplate
 ## Installation
 
 ```
-  yarn install
+  npm install
 ```
 
 ## Usage
 
 ### Dev
 
-Start the server
+Start the server (development)
 
 ```
-  yarn start
+  npm run dev
 ```
 
 GraphiQL will be running at http://localhost:3000/graphiql/
@@ -34,13 +34,13 @@ GraphiQL will be running at http://localhost:3000/graphiql/
 Build the server
 
 ```
-  yarn build
+  npm run build
 ```
 
 Run the server
 
 ```
-  yarn production
+  npm start
 ```
 
 The server will be running at http://localhost:3000
