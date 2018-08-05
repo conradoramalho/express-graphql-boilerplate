@@ -5,7 +5,7 @@
   "main": "./dist/server.js",
   "scripts": {
     "start": "node ./dist/server.js",
-    "dev": "nodemon ./src/server.js --exec babel-node",    
+    "dev": "nodenv -e nodemon -- --exec",   
     "precommit": "pretty-quick --staged",
     "build": "babel ./src -d ./dist --source-maps"
   },
@@ -22,6 +22,10 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/conradoramalho/express-graphql-boilerplate/issues"
+  },
+
+  "nodemonConfig": {
+    "exec": "babel-node ./src/server.js"
   },
   "homepage": "https://github.com/conradoramalho/express-graphql-boilerplate#readme",
   "dependencies": {
@@ -42,6 +46,8 @@
     "@babel/preset-env": "^7.0.0-beta.46",
     "babel-eslint": "^8.2.3",
     "eslint": "^4.19.1",
-    "nodemon": "^1.17.4"
+    "nodemon": "^1.17.4",
+    "dotenv": "^6.0.0",
+    "node-env-run": "^3.0.2"
   }
 }
